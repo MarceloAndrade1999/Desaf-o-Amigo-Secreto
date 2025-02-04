@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="assets/amigo-secreto.png" alt="Amigo Secreto" class="header-image">
+        <h1>Amigo Secreto</h1>
+    </header>
+
+    <main>
+        <section class="input-section">
+            <h2>Digite el nombre de sus amigos</h2>
+            <div class="input-container">
+                <input type="text" id="nombre" placeholder="Digite un nombre">
+                <button onclick="agregarParticipante()">Adicionar</button>
+                <button onclick="refrescarPantalla()" class="actualizar-btn">
+                    <img src="assets/Actualizar.png" alt="Actualizar" class="icono">
+                </button>
+            </div>
+        </section>
+        
+
+        <section class="participants-section">
+            <h2>Lista de Participantes</h2>
+            <ul id="lista-participantes">
+            </ul>
+        </section>
+        
+        <section class="result-section">
+            <button class="sort-button" onclick="sortearAmigoSecreto()">Sortear amigo</button>
+            <div id="resultado">
+                <table id="resultado-tabla" class="tabla-resultado">
+                    <thead>
+                        <tr>
+                            <th>Participante</th>
+                            <th>Amigo Secreto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se llenarán los resultados dinámicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

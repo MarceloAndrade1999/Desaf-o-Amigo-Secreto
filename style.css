@@ -1,0 +1,123 @@
+
+.header-image {
+    position: absolute; /* Posición absoluta para moverla donde quieras */
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la parte izquierda */
+    height: 100px; /* Ajusta el tamaño si es necesario */
+    border-radius: 50%; /* Mantén el borde redondeado */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Añade una sombra para resaltar */
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+}
+
+/* Ajusta el encabezado para que se vea bien sin la imagen */
+header {
+    padding: 20px 0;
+    background-color: rgba(0, 102, 204, 0.8); /* Fondo con transparencia */
+    color: white;
+    border-bottom: 5px solid white;
+    text-align: center;
+    position: relative; /* Mantén el encabezado en su lugar */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/Amistad.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajusta el fondo para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* No repite la imagen */
+    background-position: center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+    text-align: center;
+    color: white; /* Cambia el texto general a blanco */
+}
+
+/* Sección de entrada */
+.input-section h2,
+.participants-section h2 {
+    color: white; /* Títulos en blanco */
+}
+
+input {
+    color: black; /* Para asegurar que el texto dentro del input sea legible */
+    background-color: white; /* Fondo blanco para contraste */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: white; /* Texto blanco en los botones */
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+/* Sección de resultados */
+.result-section {
+    color: white; /* Texto de los resultados en blanco */
+}
+/* Tabla de resultados */
+.tabla-resultado {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 600px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 16px;
+}
+
+.tabla-resultado th,
+.tabla-resultado td {
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.tabla-resultado th {
+    background-color: rgba(255, 69, 0, 0.8);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabla-resultado tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+/* Estilo de los botones con íconos */
+.actualizar-btn, .eliminar-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.icono {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Estilo para la lista de participantes */
+#lista-participantes li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    color: white;
+}
